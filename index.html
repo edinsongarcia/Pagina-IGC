@@ -1,0 +1,48 @@
+<html>
+<meta lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+<head>
+
+<title>Calculo de grasa</title>
+
+
+
+<link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+
+<script type="text/javascript" src="javascript/funciones.js"></script>
+</head>
+<body>
+<div class="formulario">
+
+<form name="form" class="contacto" action="php/formula.php" method="post">
+            <p>INDICE DE GRASA CORPORAL</p><br><br> 
+             Nombre  <input name="nombre" type="text" size="15" maxlength="20"><br><br>
+             Edad    <input name="edad" type="text" size="2" maxlength="2"><br><br>
+             Selecciona tu sexo 
+             <input type="radio" name="sexo"  value="femenino" checked="checked"  id="fem" onClick="muestra('f'); oculta('m')">Femenino                    
+             <input type="radio" name="sexo" value="masculino" id="mas" onClick="muestra('m'); oculta('f')">Masculino
+             <br>             
+      <div id="f">
+             <br>
+             Estatura (cm)  <input name="estatura" type="number" size="3" max="250"><br><br>
+             Cintura (cm)   <input name="cintura" type="number" size="3" max="200" ><br><br>
+             Cuello (cm)    <input name="cuello" type="number" size="3" max="100" ><br><br>
+             Caderas (cm)    <input name="cadera" type="number" size="3" max="200" ><br><br>
+      </div>
+      <div id="m">
+            <br>
+             Estatura (cm)  <input name="estatura1" type="number" size="3" max="250"><br><br>
+             Cintura (cm)   <input name="cintura1" type="number" size="3" max="200" ><br><br>
+             Cuello (cm)    <input name="cuello1" type="number" size="3" max="100" ><br><br>
+            
+      </div>
+            
+             <div><input type='submit' name="boton" class="boton" id="calcular" value='Calcular'></div>
+             
+           	      
+</form>
+</div>
+</body>
+</html>
